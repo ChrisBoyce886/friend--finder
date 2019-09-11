@@ -9,9 +9,9 @@ Click [here](https://friend--finder--app.herokuapp.com/) to view the application
 
 ## Deployment
 
-1. Clone this [repo](https://github.com/ChrisBoyce886/FriendFinder.git)
+1. Clone this repo - https://github.com/ChrisBoyce886/friend--finder.git
 2. Run `npm install` command from the root directory
-3. Set the `PORT` environment variable within `server.js` to the number of your choice. Ex.: `var PORT = process.env.PORT || 3000`
+3. Set the `PORT` environment variable within `server.js` file to the number of your choice. `3000` is set as default. Example: `var PORT = process.env.PORT || 3000`
 4. Run `node server.js` command from the root directory
 5. Navigate to your browser and enter `localhost:3000`(Or your preferred PORT number)
 
