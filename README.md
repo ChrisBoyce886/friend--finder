@@ -4,7 +4,7 @@ The concept of *Friend Finder* is essentially a simple dating-style application 
 
 The application is implemented using a [Node.js](https://nodejs.org/en/) and [Express](https://expressjs.com/) server on the back end which serves up CSS and Bootstrap styled HTML pages. 
 
-Click [here]() to view the application!
+Click [here](https://friend--finder--app.herokuapp.com/) to view the application!
 
 
 ## Deployment
