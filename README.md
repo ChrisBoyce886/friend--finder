@@ -7,7 +7,7 @@ The application is implemented using a [Node.js](https://nodejs.org/en/) and [Ex
 Click [here](https://friend--finder--app.herokuapp.com/) to view the application!
 
 
-## Deployment
+## Installation 
 
 1. Clone this repo - https://github.com/ChrisBoyce886/friend--finder.git
 2. Run `npm install` command from the root directory
