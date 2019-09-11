@@ -29,7 +29,7 @@ Click [here](https://friend--finder--app.herokuapp.com/) to view the application
      
 ## Demonstration gif:
 
-* This gif demonstrates how to access the survey, how to fill out the survey, and the resulting friend match from your survey answers. 
+* This gif demonstrates how to access the survey, how to fill out the survey, potential error alerts, the resulting friend match from your survey answers, and the api/friends object showing the user information being added to the freinds record. 
    
 ![friendFinderGif](app/public/screenshot/friendFinder.gif "friendFiner.gif")
 
