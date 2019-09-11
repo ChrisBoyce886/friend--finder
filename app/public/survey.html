@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Friend Finder</title>    
+    
+    <link rel="shortcut icon" type="image/ico" href="public/FriendsFinderlogo.jpg"> <!--Favicon-->
+
+    <link href="https://fonts.googleapis.com/css?family=Modak&display=swap&effect=3d" rel="stylesheet"> <!--Google Fonts-->
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- <link rel="stylesheet" type="text/css" href="/../public/style2.css">  -->  <!--CSS Stylesheet-->
+
+</head>
+<body>
+
+<div class="container">
+    <div id="header">
+        <h1 id="header" class="font-effect-3d">Survey Questions</h1>
+    </div>
+    <!-- Form field to store input boxes, questions, answer options, and submit button -->
+    <form id="form"> 
+        <fieldset>   
+            <label for="name">What's your name? (Required)</label>
+            <br>
+            <input class="input" id="name" type="text">
+
+            <br>
+            <br>
+
+            <label for="photo">Add a link here to a photo or drawing of yourself. (Optional)</label>
+            <br>
+            <input class="input" id="photo" type="text">
+
+            <br>
+            <br>
+
+            <label for="q1">Your mind is always buzzing with unexplored ideas and plans.</label>
+            <br>
+            <select class="selection" id="q1">
+                <option value="0">(Select answer)</option>
+                <option value="1">1 (Strongly Agree)</option>
+                <option value="2">2 (Somewhat Agree)</option>
+                <option value="3">3 (Neutral)</option>
+                <option value="4">4 (Somewhat Disagree)</option>
+                <option value="5">5 (Strongly Disagree)</option>
+            </select>
+
+            <br>
+            <br>
+
+            <label for="q2">Generally speaking, you rely more on your experience than your imagination.</label>
+            <br>
+            <select class="selection" id="q2">
+                <option value="0">(Select answer)</option>
+                <option value="1">1 (Strongly Agree)</option>
+                <option value="2">2 (Somewhat Agree)</option>
+                <option value="3">3 (Neutral)</option>
+                <option value="4">4 (Somewhat Disagree)</option>
+                <option value="5">5 (Strongly Disagree)</option>
+            </select>
+
+            <br>
+            <br>
+
+            <label for="q3">You find it easy to stay relaxed and focused even when there is some pressure.</label>
+            <br>
+            <select class="selection" id="q3">
+                <option value="0">(Select answer)</option>
+                <option value="1">1 (Strongly Agree)</option>
+                <option value="2">2 (Somewhat Agree)</option>
+                <option value="3">3 (Neutral)</option>
+                <option value="4">4 (Somewhat Disagree)</option>
+                <option value="5">5 (Strongly Disagree)</option>
+            </select>
+
+            <br>
+            <br>
+
+            <label for="q4">You rarely do something just out of sheer curiosity.</label>
+            <br>
+            <select class="selection" id="q4">
+                <option value="0">(Select answer)</option>
+                <option value="1">1 (Strongly Agree)</option>
+                <option value="2">2 (Somewhat Agree)</option>
+                <option value="3">3 (Neutral)</option>
+                <option value="4">4 (Somewhat Disagree)</option>
+                <option value="5">5 (Strongly Disagree)</option>
+            </select>
+
+            <br>
+            <br>
+
+            <label for="q5">People can rarely upset you.</label>
+            <br>
+            <select class="selection" id="q5">
+                <option value="0">(Select answer)</option>
+                <option value="1">1 (Strongly Agree)</option>
+                <option value="2">2 (Somewhat Agree)</option>
+                <option value="3">3 (Neutral)</option>
+                <option value="4">4 (Somewhat Disagree)</option>
+                <option value="5">5 (Strongly Disagree)</option>
+            </select>
+
+            <br>
+            <br>
+
+            <label for="q6">It is often difficult for you to relate to other people’s feelings.</label>
+            <br>
+            <select class="selection" id="q6">
+                <option value="0">(Select answer)</option>
+                <option value="1">1 (Strongly Agree)</option>
+                <option value="2">2 (Somewhat Agree)</option>
+                <option value="3">3 (Neutral)</option>
+                <option value="4">4 (Somewhat Disagree)</option>
+                <option value="5">5 (Strongly Disagree)</option>
+            </select>
+
+            <br>
+            <br>
+
+            <label for="q7">In a discussion, truth should be more important than people’s sensitivities.</label>
+            <br>
+            <select class="selection" id="q7">
+                <option value="0">(Select answer)</option>
+                <option value="1">1 (Strongly Agree)</option>
+                <option value="2">2 (Somewhat Agree)</option>
+                <option value="3">3 (Neutral)</option>
+                <option value="4">4 (Somewhat Disagree)</option>
+                <option value="5">5 (Strongly Disagree)</option>
+            </select>
+
+            <br>
+            <br>
+
+            <label for="q8">You rarely get carried away by fantasies and ideas.</label>
+            <br>
+            <select class="selection" id="q8">
+                <option value="0">(Select answer)</option>
+                <option value="1">1 (Strongly Agree)</option>
+                <option value="2">2 (Somewhat Agree)</option>
+                <option value="3">3 (Neutral)</option>
+                <option value="4">4 (Somewhat Disagree)</option>
+                <option value="5">5 (Strongly Disagree)</option>
+            </select>
+
+            <br>
+            <br>
+
+            <label for="q9">You think that everyone’s views should be respected regardless of whether they are supported by facts or not.</label>
+            <br>
+            <select class="selection" id="q9">
+                <option value="0">(Select answer)</option>
+                <option value="1">1 (Strongly Agree)</option>
+                <option value="2">2 (Somewhat Agree)</option>
+                <option value="3">3 (Neutral)</option>
+                <option value="4">4 (Somewhat Disagree)</option>
+                <option value="5">5 (Strongly Disagree)</option>
+            </select>
+
+            <br>
+            <br>
+
+            <label for="q10">You feel more energetic after spending time with a group of people.</label>
+            <br>
+            <select class="" id="q10">
+                <option value="0">(Select answer)</option>
+                <option value="1">1 (Strongly Agree)</option>
+                <option value="2">2 (Somewhat Agree)</option>
+                <option value="3">3 (Neutral)</option>
+                <option value="4">4 (Somewhat Disagree)</option>
+                <option value="5">5 (Strongly Disagree)</option>
+            </select>
+
+            <br>
+            <br>
+            <br>
+            <!-- Submit Form Button -->
+            <section>
+                <button class="lined thin" type="submit" id="submitBtn" data-toggle="modal" data-target="#resultsModal">Submit</button>
+            </section>
+        </fieldset>
+    </form>
+</div>
+        
+<!-- Background/Footer Borders -->
+<!-- <div id="top">
+</div> -->
+<div id="bottom">
+     <p id="footer"><a href="/api/friends" target="blank">API Friends List</a> | <a href="https://github.com/ChrisBoyce886/FriendFinder" target="blank">GitHub Repo</a></p>
+</div>
+<!-- <div id="left">
+</div>
+<div id="right">
+</div> -->
+
+<!-- Bootstrap Modal -->
+<div id="resultsModal" class="modal fade" role="dialog">
+    <div class="modal-dialog" role="document"> 
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title"></h5>
+            </div>
+            <div class="modal-body">
+                <h3 id="matchName"></h3>
+                <img class="img-responsive" id="matchPhoto" alt="Friend Photo">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default lined thin" id="closeBtn" data-dismiss="modal">Return to Home Page</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<!-- CSS Styling for /Survey.html -->
+<style>
+
+body {
+    background-image: url("https://d39l2hkdp2esp1.cloudfront.net/img/photo/170629/170629_00_2x.jpg?20190502072828"); 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 120%;
+    background-color: rgb(21, 146, 155);
+}
+
+#top, #bottom, #right, #left {
+    background: rgb(207, 63, 183);
+}
+
+#top {    
+    background: rgb(26, 160, 170);
+    position: fixed;
+    left: 0; right: 0;
+    height: 20px;
+    top: 0;
+}
+
+#bottom {
+    background: rgb(26, 160, 170);
+    position: fixed;
+    left: 0; right: 0;
+    height: 20px;
+    bottom: 0;
+}
+
+#left {    
+    position: fixed;
+    top: 0; bottom: 0;
+    width: 20px;
+    left: 0; 
+}
+
+#right {    
+    position: fixed;
+    top: 0; bottom: 0;
+    width: 20px;
+    right: 0;
+}
+
+.container {  
+    margin: 0 auto;
+}
+
+#header {
+    font-family: 'Modak', cursive;
+    color: rgb(26, 160, 170);
+    margin-top: 2%;
+    margin-bottom: 0;
+    text-align: center;
+    font-size: 225%;
+}
+
+form {    
+    opacity: .9;
+    width: 50%;
+    margin: 0 auto;  
+    margin-bottom: 10%;
+}
+
+#form label > span {
+	float: left;
+	width: 100px;
+	color: #F072A9;
+	font-weight: bold;
+	font-size: 13px;
+	text-shadow: 1px 1px 1px #fff;
+}
+
+#form fieldset {
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	margin: 0px 0px 10px 0px;
+	border: 1px solid #FFD2D2;
+	padding: 20px;
+	background: #FFF4F4;
+	box-shadow: inset 0px 0px 15px #FFE5E5;
+	-moz-box-shadow: inset 0px 0px 15px #FFE5E5;
+    -webkit-box-shadow: inset 0px 0px 15px #FFE5E5;
+}
+
+#form fieldset legend {
+	color: #FFA0C9;
+	border-top: 1px solid #FFD2D2;
+	border-left: 1px solid #FFD2D2;
+	border-right: 1px solid #FFD2D2;
+	border-radius: 5px 5px 0px 0px;
+	-webkit-border-radius: 5px 5px 0px 0px;
+	-moz-border-radius: 5px 5px 0px 0px;
+	background: #FFF4F4;
+	padding: 0px 8px 3px 8px;
+	box-shadow: -0px -1px 2px #F1F1F1;
+	-moz-box-shadow:-0px -1px 2px #F1F1F1;
+	-webkit-box-shadow:-0px -1px 2px #F1F1F1;
+	font-weight: normal;
+	font-size: 12px;
+}
+
+#form input,
+#form select {
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border: 1px solid #FFC2DC;
+	outline: none;
+	color: rgb(26, 160, 170);
+	padding: 5px 8px 5px 8px;
+	box-shadow: inset 1px 1px 4px #FFD5E7;
+	-moz-box-shadow: inset 1px 1px 4px #FFD5E7;
+	-webkit-box-shadow: inset 1px 1px 4px #FFD5E7;
+	background: #FFEFF6;
+	width:50%;
+}
+
+section, .modal-footer {
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    width:100%;
+    min-height:100%;
+}
+
+#submitBtn {
+    font-family: 'Indie Flower', cursive;
+    align-self:center;
+    background:transparent;
+    padding:1rem 2rem;
+    margin: 0 auto;
+    transition:all .5s ease;
+    color: rgb(207, 63, 183);
+    font-size:1rem;
+    letter-spacing:1px;
+    outline:none;
+    box-shadow: -5px 5px 5px 5px rgb(26, 160, 170);
+    border-radius: 155px 15px 125px 15px/15px 225px 15px 255px;
+}
+
+#closeBtn {
+    font-family: 'Indie Flower', cursive;
+    align-self:center;
+    background:transparent;
+    padding:1rem 1rem;
+    margin: 0 auto;
+    transition:all .5s ease;
+    color: black;
+    font-size:1rem;
+    letter-spacing:1px;
+    outline:none;
+    box-shadow: -2px 2px 2px 2px rgb(207, 63, 183);
+    border-radius: 155px 15px 125px 15px/15px 225px 15px 255px;
+    border-color: black;
+    
+}
+
+.lined.thin:hover {
+    box-shadow:2px 8px 4px -6px rgb(26, 160, 170) !important;
+} 
+ 
+.lined.thin {
+    border: solid 2px rgb(207, 63, 183) !important;
+}
+
+#footer {
+   margin-left: 1%;
+   margin-top:-.3%;
+}
+
+a {
+    color: black;
+}
+
+a:hover {
+    color:rgb(207, 63, 183) !important;
+}
+
+.modal-content {   
+    font-family: 'Indie Flower', cursive;
+    background-color: rgb(26, 160, 170);
+}
+
+.modal-header {
+     margin: 0 auto;
+     border-bottom: 3px solid rgb(207, 63, 183);     
+}
+
+#matchName {
+    text-align: center;
+}
+
+#matchPhoto {
+    width: 350px;
+    height: 300px;
+}
+
+.modal-body > .img-responsive {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.modal-footer {
+    border-top: 3px solid rgb(26, 160, 170);
+}
+
+</style>
+
+
+<!-- JavaScript Logic for /Survey.html -->
+<script>
+
+// Click function that will take in the value from each user form input and display closest match into a modal
+$("#submitBtn").on("click", function() {
+    event.preventDefault();
+
+    // If the name form is empty, alert user to fill in name before moving forward
+    if ($("#name").val() == "") {
+        alert("Please enter your name");
+        event.preventDefault();
+        return false;
+    } 
+        // If any of the answer forms are not selected, alert user to fill in all answers before moving forward
+        else if ($(".selection").val() == 0) {
+            alert("Please answer all questions before moving forward");
+            event.preventDefault();
+            return false;
+        } 
+            // If name form and all answers are filled out continue to results
+            else {             
+                // Grab the values from each form input, trim, and assign to a variable/object
+                var userInput = {
+                    name: $("#name").val().trim(),
+                    photo: $("#photo").val().trim(),
+                    answers: [
+                        $("#q1").val().trim(),
+                        $("#q2").val().trim(),
+                        $("#q3").val().trim(),
+                        $("#q4").val().trim(),
+                        $("#q5").val().trim(),
+                        $("#q6").val().trim(),
+                        $("#q7").val().trim(),
+                        $("#q8").val().trim(),
+                        $("#q9").val().trim(),
+                        $("#q10").val().trim()
+                    ]
+                };
+                // Grab current URL, add "/api/friends", 
+                var currentURL = window.location.origin;
+                //Pass in userInput variable object to post new user input info to the object already in api/friends
+                $.post(currentURL + "/api/friends", userInput, function(data) {
+                // Grab the name and photo ID's from HTML modal code and pass in the name and photo values from users closest match.
+                $(".modal-title").text(userInput.name + ", here is your top Friend match!");
+                $("#matchName").text("Say Hi to " + data.name + "!");
+                $("#matchPhoto").attr("src", data.photo);
+                // Display the Modal
+                $("#resultsModal").modal("open");
+                });
+            };
+});
+
+// Click function for modal "Return to Home" button
+$("#closeBtn").on("click", function() {
+    //Grab current URL and add "/" to bring user back to home page using window replace method
+    var currentURL = window.location.origin;
+    var homepage = currentURL + "/";
+    window.location.replace(homepage);
+});
+
+</script>
+
+</body>
+</html>

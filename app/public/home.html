@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Friend Finder</title>    
+    
+    <link rel="shortcut icon" type="image/ico" href="public/FriendsFinderlogo.jpg"> <!--Favicon-->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script> <!--For Bootstrap-->
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> <!--Bootstrap 4-->
+    
+    <link href="https://fonts.googleapis.com/css?family=Modak&display=swap&effect=3d" rel="stylesheet"> <!--Google Fonts-->
+
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet"> <!--Google Fonts-->
+   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> <!--jQuery library-->
+    
+    <!-- <link href="/../public/style.css" rel="stylesheet" type="text/css" >  -->  <!--CSS Stylesheet-->
+
+</head>
+<body>
+
+    <div class="container">
+        <div>
+            <h1 id="header" class="font-effect-3d">Friend Finder</h1>
+        </div>
+        <div>
+            <p id="bio">Find brand new friends in just ten short questions!</p>
+        </div>
+        <section>
+            <a href="/survey"><button class="lined thin" type="submit">Start Survey!</button></a>
+        </section>
+        </div>
+
+<!-- Background/Footer Borders -->
+<!-- <div id="top">
+</div> -->
+<div id="bottom">
+    <p id="footer"><a href="/api/friends" target="blank">API Friends List</a> | <a href="https://github.com/ChrisBoyce886/FriendFinder" target="blank">GitHub Repo</a></p>
+</div>
+<!-- <div id="left">
+</div>
+<div id="right">
+</div> -->
+
+<!-- CSS Styling for /home.html -->
+<style>
+
+body {
+    background-image: url("https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/348-mckinsey-104.jpg?auto=format&bg=F4F4F3&con=3&cs=srgb&dpr=1&fm=jpg&ixlib=php-1.1.0&mark=rawpixel-watermark.png&markalpha=90&markpad=13&markscale=10&markx=25&q=75&usm=15&vib=3&w=1200&s=872b77242d96024ac86505e6dc6a8c8b"); 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 136%;
+    background-color: rgb(21, 146, 155);
+}
+
+#top, #bottom, #right, #left {
+    background: rgb(207, 63, 183);
+}
+
+#top {    
+    background:  rgb(26, 160, 170);
+    position: fixed;
+    left: 0; right: 0;
+    height: 20px;
+    top: 0;
+}
+
+#bottom {
+    background: rgb(26, 160, 170);
+    position: fixed;
+    left: 0; right: 0;
+    height: 20px;
+    bottom: 0;
+}
+
+#left {
+    position: fixed;
+    top: 0; bottom: 0;
+    width: 20px;
+    left: 0; 
+}
+
+#right {
+    position: fixed;
+    top: 0; bottom: 0;
+    width: 20px;
+    right: 0;
+}
+
+#header {
+    font-family: 'Modak', cursive;
+    color: rgb(207, 63, 183);
+    margin-top: 2%;
+    margin-bottom: 0;
+    text-align: center;
+    font-size: 500%;
+}
+
+#bio {
+    font-family: 'Indie Flower', cursive;
+    color: rgb(207, 63, 183);
+    margin-top: 0;
+    text-align: center;
+    font-size: 200%;
+}
+
+section {
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    width:100%;
+    min-height:100%;
+    margin-top:3rem;
+}
+
+button {
+    font-family: 'Indie Flower', cursive;
+    align-self:center;
+    background:transparent;
+    padding:1rem 1rem;
+    margin:0 1rem;
+    transition:all .5s ease;
+    color: rgb(207, 63, 183);
+    font-size:2rem;
+    letter-spacing:1px;
+    outline:none;
+    box-shadow: -5px 5px 5px 5px rgb(26, 160, 170);
+    border-radius: 155px 15px 125px 15px/15px 225px 15px 255px;
+}
+
+.lined.thin:hover {
+    box-shadow:2px 8px 4px -6px rgb(26, 160, 170);
+} 
+ 
+.lined.thin {
+    border: solid 2px rgb(207, 63, 183);
+}
+
+#footer {
+   margin-left: 1%;
+   margin-top:-.3%;
+}
+
+a {
+    color: black;
+}
+
+</style>
+
+</body>
+</html>

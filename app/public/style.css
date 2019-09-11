@@ -1,0 +1,99 @@
+body {
+    background-image: url("../public/friends6.jpg"); 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 136%;
+    background-color: rgb(21, 146, 155);
+}
+
+#top, #bottom, #right, #left {
+    background: rgb(207, 63, 183);
+}
+
+#top {    
+    background:  rgb(26, 160, 170);
+    position: fixed;
+    left: 0; right: 0;
+    height: 20px;
+    top: 0;
+}
+
+#bottom {
+    background: rgb(26, 160, 170);
+    position: fixed;
+    left: 0; right: 0;
+    height: 20px;
+    bottom: 0;
+}
+
+#left {
+    position: fixed;
+    top: 0; bottom: 0;
+    width: 20px;
+    left: 0; 
+}
+
+#right {
+    position: fixed;
+    top: 0; bottom: 0;
+    width: 20px;
+    right: 0;
+}
+
+#header {
+    font-family: 'Modak', cursive;
+    color: rgb(207, 63, 183);
+    margin-top: 2%;
+    margin-bottom: 0;
+    text-align: center;
+    font-size: 500%;
+}
+
+#bio {
+    font-family: 'Indie Flower', cursive;
+    color: rgb(207, 63, 183);
+    margin-top: 0;
+    text-align: center;
+    font-size: 200%;
+}
+
+section {
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    width:100%;
+    min-height:100%;
+    margin-top:3rem;
+}
+
+button {
+    font-family: 'Indie Flower', cursive;
+    align-self:center;
+    background:transparent;
+    padding:1rem 1rem;
+    margin:0 1rem;
+    transition:all .5s ease;
+    color: rgb(207, 63, 183);
+    font-size:2rem;
+    letter-spacing:1px;
+    outline:none;
+    box-shadow: -5px 5px 5px 5px rgb(26, 160, 170);
+    border-radius: 155px 15px 125px 15px/15px 225px 15px 255px;
+}
+
+.lined.thin:hover {
+    box-shadow:2px 8px 4px -6px rgb(26, 160, 170);
+} 
+ 
+.lined.thin {
+    border: solid 2px rgb(207, 63, 183);
+}
+
+#footer {
+   margin-left: 1%;
+   margin-top:-.3%;
+}
+
+a {
+    color: black;
+}
